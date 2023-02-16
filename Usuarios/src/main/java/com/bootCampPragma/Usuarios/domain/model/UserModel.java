@@ -3,11 +3,20 @@ package com.bootCampPragma.Usuarios.domain.model;
 import com.bootCampPragma.Usuarios.domain.exception.InvalidDocumentException;
 import com.bootCampPragma.Usuarios.domain.exception.InvalidEmailStructException;
 import com.bootCampPragma.Usuarios.domain.exception.InvalidNumberPhoneException;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+
 
 public class UserModel {
 
     private Long id;
-
     private String nombre;
     private String apellido;
     private Long documentoIdentidad;
@@ -16,7 +25,7 @@ public class UserModel {
     private String contraseña;
     private  Rol idRol;
 
-    public UserModel(Long id, String nombre, String apellido, Long documentoIdentidad, String celular, String email, String contraseña) {
+    /*public UserModel(Long id, String nombre, String apellido, Long documentoIdentidad, String celular, String email, String contraseña,String idRol) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -24,6 +33,14 @@ public class UserModel {
         this.celular = celular;
         this.email = email;
         this.contraseña = contraseña;
+        this.idRol = idRol;
+    }
+
+    public String getIdRol() {
+        return idRol;
+    }
+
+    public void setIdRol(String idRol) {
         this.idRol = idRol;
     }
 
@@ -91,5 +108,5 @@ public class UserModel {
         this.contraseña = contraseña;
     }
 
-
+*/
 }
